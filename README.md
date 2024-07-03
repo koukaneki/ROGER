@@ -1,0 +1,2 @@
+En este pequeño programa tomamos una lista de 5x5 pero podria ser cualquier lista de tamaño nxn la cual esta reprensentado una imagen, el usuario quiere girarl ya sea en 180 grados o 90, en caso de ser 90 el usuario puede
+elegir si decide girarla a la derecha o a la izquierda, me apoye de una matriz auxiliar para este trabajo, la cual esta definida por la propiedad .from, espero les guste cualquier duda a sus ordenes :D
