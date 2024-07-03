@@ -27,17 +27,20 @@ const coloresHexadecimales = [
 ];
 
 /* Aqui inicia tu codigo  */
+
+/*defininindo una nueva array con el tamaño de la original pero vacia*/
 let n=coloresHexadecimales.length
 let matrizCopia = Array.from({ length: n }, () => Array(n).fill(0));
+/* definimos una variable donde estara la informacion del usuario*/
 let grados=prompt('ingrese en cuantos grados desea girar la matriz 90 o 180')
-
+/*giro de 180 grados*/
 if (grados==180) {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
         matrizCopia[n - 1 - i][n - 1 - j] = coloresHexadecimales[i][j];
     }
 }
-  
+  /*gira a la derecha*/
 } else { let direccion=prompt('Por favor elija si desea moverse hacia la izquierda o la derecha') 
   if (direccion=='derecha') {
     for (let i = 0; i < n; i++) {
@@ -47,7 +50,7 @@ if (grados==180) {
       }
        
      }
-  
+  /*gira a la izquierda*/
 } else { 
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
@@ -62,9 +65,6 @@ if (grados==180) {
 }
   
 
-/* aqui hago que gire a la derecha*/
-
-/* aqui hare que gire a la izquierda */
 
 cleaner();
 painter(matrizCopia)
